@@ -400,7 +400,7 @@ html,body{height:100%;background:var(--bg);font-family:'DM Sans',sans-serif;colo
   <div class="unlock-banner" id="unlock-banner" style="display:none;margin-bottom:10px"></div>
   <div class="over-lb" id="over-lb"></div>
   <div class="over-actions">
-    <button class="btn-share" id="btn-share">Copy Stats to Clipboard</button>
+    <button class="btn-share" id="btn-share">Copy</button>
     <button class="btn-primary" id="btn-restart">Play Again</button>
   </div>
 </div>
@@ -668,7 +668,7 @@ let lastGameSummary=null;
 function buildShareText(s){
   const avg=s.timesPlayed>0?Math.round(s.totalScore/s.timesPlayed):0;
   return [
-    'Number Tennis',
+    'My Number Tennis Match',
     '──────────────',
     'Score:       '+s.lastScore,
     'Peak Coins:  '+s.lastPeakCoins,
@@ -681,7 +681,7 @@ function buildShareText(s){
     'Times Played:'+s.timesPlayed,
     'Total Won:   '+s.roundsWon,
     '',
-    'Play at Number Tennis.pages.dev',
+    'jlesdev.github.io/Number-Tennis',
   ].join('\n');
 }
 
